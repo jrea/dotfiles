@@ -26,6 +26,7 @@ set title
 " Turn off line wrapping
 set nowrap
 set smarttab
+set expandtab
 set autoindent
 set smartindent
 set nostartofline
@@ -100,7 +101,6 @@ set t_RV=
 
 " Use 2 spaces for <Tab> and :retab
 set tabstop=2
-set expandtab
 
 " Use 2 spaces for <Tab> while performing editing operations, like insert a
 " tab or using <BS>
@@ -199,8 +199,10 @@ autocmd BufNewFile,BufRead *.scss set ft=css
     map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
   " Faster ctrlp lookup
     let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.git|node_modules|build)$',
+    \ 'dir':  '\v[\/](\.git|node_modules|build|reports|screenshots)$',
     \ }
+
+    let g:ctrlp_extensions = ['tag', 'buffertag', 'dir']
   " make some brackets
     imap {<cr> {<cr>}<c-o>O
 
