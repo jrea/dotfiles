@@ -1,5 +1,19 @@
-"pathogen
-silent! call pathogen#infect()
+call plug#begin()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'pangloss/vim-javascript'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+let g:airline_theme='solarized'
+
+
 " Turn on syntax highlighting
 syntax on
 " powerline
