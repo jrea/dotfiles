@@ -1,0 +1,14 @@
+{
+  "editor.cursorStyle": "block",
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "blink",
+  "terminal": {
+    "integrated": {
+      "shellArgs": {
+        "osx": [
+          "-l"
+        ]
+      }
+    }
+  }
+}
