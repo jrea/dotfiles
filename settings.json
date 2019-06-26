@@ -1,14 +1,22 @@
 {
-  "editor.cursorStyle": "block",
-  "editor.tabSize": 2,
-  "editor.cursorBlinking": "blink",
-  "terminal": {
-    "integrated": {
-      "shellArgs": {
-        "osx": [
-          "-l"
-        ]
-      }
-    }
-  }
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": true,
+    },
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "eslint.autoFixOnSave": true,
+    "flow.useNPMPackagedFlow": true,
+    "javascript.format.enable": false,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "window.zoomLevel": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
 }
